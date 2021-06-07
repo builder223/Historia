@@ -1,2 +1,7 @@
 # Historia
-Discord Bot written with Lua
+Discord Bot written with Lua.
+
+```
+COMING SOON
+
+```
