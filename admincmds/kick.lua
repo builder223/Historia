@@ -30,4 +30,4 @@ client:on('messageCreate', function(message)
           end
           message:reply("The commoner, " + member + ", has been thrown out!")
     end
-end)
+end) 
