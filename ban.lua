@@ -8,7 +8,7 @@ local client = discordia.Client()
 client:on('messageCreate', function(message)
   if message.author.bot then return end
 
-  if message.content:sub(1, 4) == '!ban' then
+  if message.content:sub(1, 6) == '!exile' then
     local author = message.guild:getMember(message.author.id)
     local member = message.mentionedUsers.first
 
@@ -29,7 +29,7 @@ client:on('messageCreate', function(message)
         member:ban()
       end
     end
-    message:reply("The commoner has been exiled!")
+    message:reply("The commoner, " + member + ", has been exiled")
   end
 end)
 

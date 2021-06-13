@@ -8,7 +8,7 @@ local client = discordia.Client()
 client:on('messageCreate', function(message)
     if message.author.bot then return end
 
-    if message.content.substring(1,4) == '!throw' then
+    if message.content.substring(1,5) == '!throw' then
         local author = message.guild:getMember(message.author.id)
         local member = message.mentionedUsers.first
            if not member then
