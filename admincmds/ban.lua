@@ -1,3 +1,4 @@
+--banning command
 local fs = require('fs')
 local json = require('json')
 local cfg = json.decode(fs.readFileSync('config.json'))
