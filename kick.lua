@@ -8,9 +8,9 @@ local client = discordia.Client()
 client:on('messageCreate', function(message)
     if message.author.bot then return end
 
-    if message.content.substring(1,5) == '!throw' then
+    if message.content.substring(1,6) == '!throw' then
         local author = message.guild:getMember(message.author.id)
-        local member = message.mentionedUsers.first
+        local member = message.mentionedUsers.first 
            if not member then
             -- The user have not mentioned any member to be banned
             message:reply("Please mention someone to be thrown out!")
